@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+
+<header>
+    <a href="portfolio.html" class="logo-link">
+        <h2 class="logo">Lux Mundi Portfolio</h2>
+    </a>
+</header>
+
+
+<div id="sidebar" class="sidebar open">
+    
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <section class="intro-section">
+        <h1>Advocacy</h1>
+        <p class="subtitle">Raising awareness for causes that matter.</p>
+
+        <div class="button-container">
+            <button onclick="window.location.href='pages/personal_ref.html'">
+                Personal Reflection Page
+            </button>
+
+            <button onclick="window.location.href='pages/comm-serv-adv.html'">
+                Community Service / Advocacy Page
+            </button>
+
+            <button onclick="window.location.href='pages/ed-inf.html'">
+                Educational / Informational Page
+            </button>
+
+            <button onclick="window.location.href='pages/faith_n_tech.html'">
+                Faith & Technology Integration Page
+            </button>
+        </div>
+    </section>
+
+</div> 
+<main class="content">
+
+    <section class="profile-section">
+        <div class="profile-pic"></div>
+
+        <h3 class="profile-name">Francis Joe P. Tabulado</h3>
+        <p class="profile-course">Bachelor of Science in Computer Science</p>
+        <p class="profile-year">3rd Year • BSCS</p>
+    </section>
+
+    <section class="info-block">
+        <h3>Works</h3>
+        <ul>
+            <li>Reflection Essays</li>
+            <li>Community Service Write-ups</li>
+            <li>Educational Infographics</li>
+            <li>Faith & Technology Insights</li>
+        </ul>
+    </section>
+
+    <section class="info-block">
+        <h3>Goals</h3>
+        <ul>
+            <li>Grow in wisdom and service</li>
+            <li>Lead with compassion</li>
+            <li>Create meaningful learning tools</li>
+            <li>Live as “Light of the World”</li>
+        </ul>
+    </section>
+
+    <section class="info-block">
+        <h3>Guiding Values</h3>
+        <ul>
+            <li>Integrity</li>
+            <li>Compassion</li>
+            <li>Excellence</li>
+            <li>Humility</li>
+            <li>Service</li>
+        </ul>
+    </section>
+
+</main>
+
+
+<footer>
+    <p>Guided by Light • Service • Excellence • Faith</p>
+</footer>
+
+<script>
+    function toggleSidebar() {
+        const sb = document.getElementById("sidebar");
+        sb.classList.toggle("open");
+    }
+</script>
+
+</body>
+</html>

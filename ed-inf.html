@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational / Informational</title>
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="../styles/scroll.css"> <!-- Scroll styling -->
+    <style>
+        /* Icon box styling */
+        .info-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .info-icon {
+            font-size: 2.5rem; /* Emoji or icon size */
+            margin-right: 20px;
+        }
+
+        .info-text {
+            flex: 1;
+            text-align: justify;
+        }
+
+        /* Section divider */
+        .info-section + .info-section {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../portfolio.html" class="logo-link">
+        <h2 class="logo">Lux Mundi Portfolio</h2>
+    </a>
+</header>
+
+<!-- RIGHT SIDEBAR -->
+<div id="sidebar" class="sidebar open">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <section class="intro-section">
+        <h1>Educational / Informational</h1>
+        <p class="subtitle">Promoting ethical practices online and in everyday life.</p>
+
+        <div class="button-container">
+            <button onclick="window.location.href='personal_ref.html'">
+                Personal Reflection Page
+            </button>
+            <button onclick="window.location.href='comm-serv-adv.html'">
+                Community Service / Advocacy Page
+            </button>
+            <button onclick="window.location.href='ed-inf.html'">
+                Educational / Informational Page
+            </button>
+            <button onclick="window.location.href='faith_n_tech.html'">
+                Faith & Technology Integration Page
+            </button>
+        </div>
+    </section>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+    <section class="scroll-container">
+        <div class="scroll-top"></div>
+
+        <div class="scroll-body">
+            <h2 class="scroll-title">Ethical and Moral Practices Online</h2>
+
+            <!-- First Info Section -->
+            <div class="info-section">
+                <div class="info-icon">💬</div>
+                <div class="info-text">
+                   <b> Practice Thoughtful Communication.</b><br> Before posting or replying, consider the impact of your words. Engage in constructive dialogue, disagree respectfully, and treat others online as you would wish to be treated in person.
+                </div>
+            </div>
+
+            <!-- Second Info Section -->
+            <div class="info-section">
+                <div class="info-icon">🤝</div>
+                <div class="info-text">
+                    <b> Uphold Digital Integrity.</b><br> Respect the intellectual property of others by always giving proper credit for ideas, images, and content you use. Do not plagiarize, and be truthful about your identity and intentions in all online interactions.
+                </div>
+            </div>
+
+            <!-- Third Info Section -->
+            <div class="info-section">
+                <div class="info-icon">🛡️</div>
+                <div class="info-text">
+                    <b>Protect Your Digital Self.</b><br> Safeguard your personal information and privacy. Use secure passwords, be wary of suspicious links or requests, and never share sensitive data that could compromise your or your family’s safety.
+                </div>
+            </div>
+
+            <!-- Fourth Info Section -->
+            <div class="info-section">
+                <div class="info-icon">🌐</div>
+                <div class="info-text">
+                    <b>Be a Positive Global Citizen.</b><br> Recognize that the internet connects a diverse world. Promote kindness, empathy, and respect online, striving to build inclusive and understanding digital communities.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="scroll-bottom"></div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>Guided by Light • Service • Excellence • Faith</p>
+</footer>
+
+<!-- COLLAPSE SCRIPT -->
+<script>
+    function toggleSidebar() {
+        const sb = document.getElementById("sidebar");
+        sb.classList.toggle("open");
+    }
+</script>
+
+</body>
+</html>

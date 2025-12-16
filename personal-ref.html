@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Reflection</title>
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="../styles/scroll.css"> <!-- NEW scroll styling -->
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../portfolio.html" class="logo-link">
+        <h2 class="logo">Lux Mundi Portfolio</h2>
+    </a>
+</header>
+
+<!-- RIGHT SIDEBAR (same as home page) -->
+<div id="sidebar" class="sidebar open">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <section class="intro-section">
+        <h1>Personal Reflection</h1>
+        <p class="subtitle">A heartfelt journey through faith and light.</p>
+
+        <div class="button-container">
+            <button onclick="window.location.href='personal_ref.html'">
+                Personal Reflection Page
+            </button>
+            <button onclick="window.location.href='comm-serv-adv.html'">
+                Community Service / Advocacy Page
+            </button>
+            <button onclick="window.location.href='ed-inf.html'">
+                Educational / Informational Page
+            </button>
+            <button onclick="window.location.href='faith_n_tech.html'">
+                Faith & Technology Integration Page
+            </button>
+        </div>
+    </section>
+</div>
+
+<!-- MAIN CONTENT (Scroll of Knowledge) -->
+<main class="content">
+
+    <section class="scroll-container">
+        <div class="scroll-top"></div>
+
+        <div class="scroll-body">
+            <h2 class="scroll-title">My Personal Reflection</h2>
+
+            <p class="scroll-placeholder">
+                <!-- ✨ PLACEHOLDER FOR YOUR REAL REFLECTION ✨ -->
+
+                Write your heartfelt reflection here. 
+                 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+
+        <div class="scroll-bottom"></div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>Guided by Light • Service • Excellence • Faith</p>
+</footer>
+
+<!-- COLLAPSE SCRIPT -->
+<script>
+    function toggleSidebar() {
+        const sb = document.getElementById("sidebar");
+        sb.classList.toggle("open");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacy</title>
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="../styles/scroll.css"> <!-- Scroll styling -->
+    <style>
+        /* Specific styling for image/text wrapping */
+        .advocacy-section img {
+            width: 200px;
+            height: auto;
+            margin: 0 20px 20px 0;
+            float: left; /* default float */
+            shape-outside: square();
+        }
+
+        .advocacy-section img.right {
+            float: right;
+            margin: 0 0 20px 20px;
+        }
+
+        .advocacy-section p {
+            text-align: justify;
+        }
+
+        /* Clear floats after each section */
+        .advocacy-section::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .advocacy-section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../portfolio.html" class="logo-link">
+        <h2 class="logo">Lux Mundi Portfolio</h2>
+    </a>
+</header>
+
+<!-- RIGHT SIDEBAR -->
+<div id="sidebar" class="sidebar open">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <section class="intro-section">
+        <h1>Advocacy</h1>
+        <p class="subtitle">Raising awareness for causes that matter.</p>
+
+        <div class="button-container">
+            <button onclick="window.location.href='personal_ref.html'">
+                Personal Reflection Page
+            </button>
+            <button onclick="window.location.href='comm-serv-adv.html'">
+                Community Service / Advocacy Page
+            </button>
+            <button onclick="window.location.href='ed-inf.html'">
+                Educational / Informational Page
+            </button>
+            <button onclick="window.location.href='faith_n_tech.html'">
+                Faith & Technology Integration Page
+            </button>
+        </div>
+    </section>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+    <section class="scroll-container">
+        <div class="scroll-top"></div>
+
+        <div class="scroll-body">
+            <h2 class="scroll-title">Advocacy Initiatives</h2>
+
+            <!-- First Section (Image Left) -->
+            <div class="advocacy-section">
+                <img src="https://via.placeholder.com/200" alt="Placeholder Image 1">
+                <p>
+                    <b>Self-Advocacy </b>
+is the ability to understand and effectively communicate one's own needs, rights, and interests to others. It is about being the primary decision-maker in your own life, taking responsibility for making personal choices, and knowing how to ask for help or accommodations when necessary. This type of advocacy is essential for personal empowerment and self-determination, ensuring that your voice is heard in all aspects of your life, from healthcare to education and employment.
+                </p>
+            </div>
+
+            <!-- Second Section (Image Right) -->
+            <div class="advocacy-section">
+                <img src="https://via.placeholder.com/200" alt="Placeholder Image 2" class="right">
+                <p>
+                    <b>Individual Advocacy</b>
+involves a person or professional speaking, acting, or writing on behalf of a single, specific person. The goal is to resolve a particular issue or injustice that the individual is facing, often when they are vulnerable or lack the power to speak up for themselves. The advocate focuses on securing the rights and entitlements of that one person, helping them navigate complex systems, and ensuring their wishes and needs are addressed by the relevant authorities or institutions.
+                </p>
+            </div>
+
+            <!-- Third Section (Image Left) -->
+            <div class="advocacy-section">
+                <img src="https://via.placeholder.com/200" alt="Placeholder Image 3">
+                <p>
+                    <b>Systems Advocacy </b>
+ is focused on achieving large-scale, lasting change by targeting the laws, policies, practices, and attitudes that affect an entire group of people. Instead of fixing one person's problem, advocates work to change the fundamental structures that create barriers or inequities for many. This often involves research, public campaigns, lobbying legislators, and collaborative effort among organizations to create new legislation or reform institutions, leading to broad social justice and greater inclusion.
+                </p>
+            </div>
+        </div>
+
+        <div class="scroll-bottom"></div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>Guided by Light • Service • Excellence • Faith</p>
+</footer>
+
+<!-- COLLAPSE SCRIPT -->
+<script>
+    function toggleSidebar() {
+        const sb = document.getElementById("sidebar");
+        sb.classList.toggle("open");
+    }
+</script>
+
+</body>
+</html>

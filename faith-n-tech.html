@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith & Technology Integration</title>
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="../styles/scroll.css"> <!-- Scroll styling -->
+    <style>
+        /* Tech integration sections */
+        .tech-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            margin-right: 20px;
+        }
+
+        .tech-text {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .tech-section + .tech-section {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="../portfolio.html" class="logo-link">
+        <h2 class="logo">Lux Mundi Portfolio</h2>
+    </a>
+</header>
+
+<!-- RIGHT SIDEBAR -->
+<div id="sidebar" class="sidebar open">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <section class="intro-section">
+        <h1>Faith & Technology</h1>
+        <p class="subtitle">Exploring ways to spread spiritual messages online effectively.</p>
+
+        <div class="button-container">
+            <button onclick="window.location.href='personal_ref.html'">
+                Personal Reflection Page
+            </button>
+            <button onclick="window.location.href='comm-serv-adv.html'">
+                Community Service / Advocacy Page
+            </button>
+            <button onclick="window.location.href='ed-inf.html'">
+                Educational / Informational Page
+            </button>
+            <button onclick="window.location.href='faith_n_tech.html'">
+                Faith & Technology Integration Page
+            </button>
+        </div>
+    </section>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+    <section class="scroll-container">
+        <div class="scroll-top"></div>
+
+        <div class="scroll-body">
+            <h2 class="scroll-title">Integrating Faith with Technology</h2>
+
+            <!-- Section 1: Social Media -->
+            <div class="tech-section">
+                <div class="tech-icon">📱</div>
+                <div class="tech-text">
+                    <strong>Social Media Platforms</strong><br>
+                    <!-- ✨ PLACEHOLDER FOR DESCRIPTION ✨ -->
+                    Utilize platforms like Instagram, Facebook, and X to share brief spiritual messages, motivational quotes, and scripture passages. Use these tools to build a supportive online community, foster meaningful connections, and inspire followers through positive and uplifting content.
+                </div>
+            </div>
+
+            <!-- Section 2: Video Streaming -->
+            <div class="tech-section">
+                <div class="tech-icon">🎥</div>
+                <div class="tech-text">
+                    <strong>Live Streaming & Video Content</strong><br>
+                    <!-- ✨ PLACEHOLDER FOR DESCRIPTION ✨ -->
+                    Harness the power of live streaming to broadcast services, host video devotionals, or conduct virtual retreats. This technology allows you to reach members who cannot attend in person and extend spiritual teachings to a larger, global audience.
+                </div>
+            </div>
+
+            <!-- Section 3: Mobile Apps -->
+            <div class="tech-section">
+                <div class="tech-icon">📲</div>
+                <div class="tech-text">
+                    <strong>Faith-Based Apps</strong><br>
+                    <!-- ✨ PLACEHOLDER FOR DESCRIPTION ✨ -->
+                    These applications provide instant access to daily devotionals, personalized prayer reminders, and in-depth scripture study tools. Apps can also serve as a hub for community interaction, facilitating group study and immediate connection with resources.
+                </div>
+            </div>
+
+            <!-- Section 4: Podcasts & Audio -->
+            <div class="tech-section">
+                <div class="tech-icon">🎧</div>
+                <div class="tech-text">
+                    <strong>Podcasts & Audio Platforms</strong><br>
+                    <!-- ✨ PLACEHOLDER FOR DESCRIPTION ✨ -->
+                    Create engaging audio content such as guided meditations, sermons, and deep-dive faith discussions. Podcasts offer a convenient way for listeners to consume faith teachings while commuting, exercising, or performing household tasks, sharing insights worldwide.
+                </div>
+            </div>
+
+            <!-- Section 5: Blogs & Articles -->
+            <div class="tech-section">
+                <div class="tech-icon">✏️</div>
+                <div class="tech-text">
+                    <strong>Blogs & Online Articles</strong><br>
+                    <!-- ✨ PLACEHOLDER FOR DESCRIPTION ✨ -->
+                    Use personal blogs and online publishing platforms to write reflective articles, share personal testimonials, and offer moral lessons or faith insights. This format allows for detailed exploration of topics and deep engagement with readers seeking thoughtful content.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="scroll-bottom"></div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>Guided by Light • Service • Excellence • Faith</p>
+</footer>
+
+<!-- COLLAPSE SCRIPT -->
+<script>
+    function toggleSidebar() {
+        const sb = document.getElementById("sidebar");
+        sb.classList.toggle("open");
+    }
+</script>
+
+</body>
+</html>
