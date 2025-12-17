@@ -128,13 +128,15 @@ header .logo {
 }
 
 .profile-pic {
-    position: absolute;
     width: 140px;
     height: 140px;
     background: #ffff;
     border-radius: 50%;
     margin: 0 auto 15px;
     border: 4px solid #2f7d32;
+}
+.profile-pic .img{
+    position: absolute;
 }
 
 .profile-name {
