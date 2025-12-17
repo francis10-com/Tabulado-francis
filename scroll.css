@@ -1,0 +1,54 @@
+/* SCROLL CONTAINER */
+.scroll-container {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Scroll Top + Bottom Decorative Rollers */
+.scroll-top,
+.scroll-bottom {
+    height: 40px;
+    background: #d2c2a3;
+    border: 2px solid #8a7a57;
+    border-radius: 15px;
+    width: 95%;
+    margin: auto;
+}
+
+/* Scroll Body */
+.scroll-body {
+    background: #f8f1d4;
+    padding: 40px 30px;
+    border-left: 6px double #b8a57a;
+    border-right: 6px double #b8a57a;
+    border-top: none;
+    border-bottom: none;
+
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    color: #4b3d27;
+    line-height: 1.7;
+
+    width: 90%;
+    margin: auto;
+}
+
+/* Slight parchment texture effect */
+.scroll-body {
+    background: linear-gradient(#fbf6e5, #f7eccc);
+}
+
+/* Title Styling */
+.scroll-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #6b542b;
+}
+
+/* Placeholder text */
+.scroll-placeholder {
+    font-style: italic;
+    opacity: 0.8;
+}
