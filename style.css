@@ -135,8 +135,9 @@ header .logo {
     margin: 0 auto 15px;
     border: 4px solid #2f7d32;
 }
-.profile-pic .img{
+.profile-img{
     position: absolute;
+    top: -15 px;
 }
 
 .profile-name {
