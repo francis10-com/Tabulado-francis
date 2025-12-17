@@ -16,18 +16,16 @@ header {
     align-items: center;
 }
 
-header a {
-    color: white;
+/* Clean logo link */
+.logo-link {
     text-decoration: none;
-    font-weight: bold;
-    padding: 6px 12px;
-    border-radius: 5px;
-    border: 1px solid white;
+    color: inherit;
+    padding: 0;
+    border: none;
 }
 
-header a:hover {
-    background: white;
-    color: #2f7d32;
+header .logo {
+    margin: 0;
 }
 
 /* SIDEBAR */
@@ -36,31 +34,27 @@ header a:hover {
     top: 0;
     right: 0;
     width: 320px;
-    height: 100%;
+    height: 100vh;
     background: #e8ffe8;
     padding: 25px;
     border-left: 3px solid #2f7d32;
     overflow-y: auto;
+    z-index: 1000;
 
-    /* Animation */
-    transform: translateX(0);
+    /* CLOSED by default */
+    transform: translateX(100%);
     transition: transform 0.3s ease;
 }
 
-/* COLLAPSE */
+/* OPEN STATE */
 .sidebar.open {
     transform: translateX(0);
 }
 
-.sidebar:not(.open) {
-    transform: translateX(320px);
-}
-
 /* TOGGLE BUTTON */
-
 .toggle-btn {
     position: absolute;
-    left: -5px;           /* hang outside the sidebar */
+    left: -45px;          /* outside sidebar */
     top: 20px;
     width: 40px;
     height: 40px;
@@ -70,28 +64,16 @@ header a:hover {
     border-radius: 5px 0 0 5px;
     cursor: pointer;
     font-size: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-
-   
-    z-index: 2000;
 }
-
 
 /* SIDEBAR CONTENT */
 .intro-section {
     text-align: center;
     margin-top: 40px;
-}
-
-.intro-section h1 {
-    font-size: 26px;
-}
-
-.highlight {
-    color: #2f7d32;
-    font-weight: bold;
 }
 
 .subtitle {
@@ -104,133 +86,41 @@ header a:hover {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 25px;
 }
 
-button {
+.button-container button {
     background: #4caf50;
     color: white;
-    padding: 12px 25px;
+    padding: 12px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-button:hover {
+.button-container button:hover {
     background: #388e3c;
-    transform: scale(1.03);
 }
 
-/* MAIN CENTER CONTENT */
-.content {
-    padding: 60px;
-    padding-right: 350px; /* ensures content is not hidden behind sidebar */
-    text-align: center;
-}
-
-.center-message h1 {
-    font-size: 40px;
-    color: #2f7d32;
-}
-
-.tagline {
-    font-size: 18px;
-    color: #3d5e3d;
-    margin-top: 10px;
-}
-
-/* FOOTER */
-footer {
-    margin-top: 60px;
-    padding: 15px;
-    background: #e0f2e0;
-    text-align: center;
-    font-weight: bold;
-    color: #2d4d2d;
-}
-
-/* Clean logo link (remove button look) */
-.logo-link {
-    text-decoration: none;
-    color: inherit;
-    padding: 0;
-    border: none;
-}
-
-/* Remove hover effects from the logo */
-.logo-link:hover {
-    background: none;
-    color: inherit;
-    opacity: 0.9; /* subtle, optional */
-}
-
-/* Ensure header logo has no accidental styling */
-header .logo {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* PROFILE SECTION */
-.profile-section {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    background: #d5f5d5;
-    border-radius: 50%;
-    margin: 0 auto 15px auto;
-    border: 3px solid #2f7d32;
-}
-
-/* Name & Course */
-.profile-name {
-    margin: 10px 0 5px;
-    color: #2f7d32;
-}
-
-.profile-course,
-.profile-year {
-    margin: 3px 0;
-    font-size: 14px;
-    color: #3a6b3a;
-}
-
-/* WORKS / GOALS / VALUES */
-.info-block {
-    margin-top: 30px;
-}
-
-.info-block h3 {
-    color: #2f7d32;
-    margin-bottom: 10px;
-}
-
-.info-block ul {
-    padding-left: 20px;
-}
-
-.info-block li {
-    margin-bottom: 6px;
-}
-
-
-/* MAIN CONTENT LAYOUT */
+/* MAIN CONTENT */
 .content {
     padding: 50px;
-    padding-right: 360px; /* keep distance from sidebar */
     max-width: 800px;
     margin: auto;
+    text-align: center;
+
+    /* DEFAULT (sidebar closed) */
+    padding-right: 50px;
+    transition: padding-right 0.3s ease;
+}
+
+/* WHEN SIDEBAR IS OPEN */
+.sidebar.open ~ .content {
+    padding-right: 380px; /* sidebar width + spacing */
 }
 
 /* PROFILE SECTION */
 .profile-section {
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -243,21 +133,18 @@ header .logo {
     border: 4px solid #2f7d32;
 }
 
-/* Profile Text */
 .profile-name {
     font-size: 22px;
     color: #2f7d32;
-    margin-bottom: 5px;
 }
 
 .profile-course,
 .profile-year {
     font-size: 16px;
     color: #3a6b3a;
-    margin: 2px 0;
 }
 
-/* SECTIONS (Works, Goals, Values) */
+/* INFO BLOCKS */
 .info-block {
     margin-bottom: 35px;
 }
@@ -271,9 +158,15 @@ header .logo {
 
 .info-block ul {
     padding-left: 20px;
-    margin-top: 8px;
 }
 
-.info-block li {
-    margin-bottom: 6px;
-}
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    padding: 15px;
+    background: #e0f2e0;
+    text-align: center;
+    font-weight: bold;
+    color: #2d4d2d;
+    }
+    
