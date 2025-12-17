@@ -122,12 +122,12 @@ header .logo {
 }
 
 /* PROFILE SECTION */
-.profile-section {\
-    position: relative;
+.profile-section {
     margin-bottom: 40px;
 }
 
 .profile-pic {
+    position: relative;
     width: 140px;
     height: 140px;
     background: #ffff;
